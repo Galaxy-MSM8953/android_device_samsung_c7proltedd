@@ -29,3 +29,7 @@ ro.multisim.set_audio_params=true
 ro.telephony.ril.config=simactivation
 rild.libpath=/system/lib64/libsec-ril.so
 rild.libpath2=/system/lib64/libsec-ril-dsds.so
+
+# Softsim
+persist.sys.softsim.status=default,default
+persist.sys.softsim.netmode=3g
