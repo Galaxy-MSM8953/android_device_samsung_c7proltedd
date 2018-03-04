@@ -8,7 +8,6 @@ TARGET_OTA_ASSERT_DEVICE := c7proltedd
 AUDIO_FEATURE_SAMSUNG_DUAL_SIM := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/c7prolte
 TARGET_KERNEL_CONFIG := c7proltedd_defconfig
 
 # Partition sizes
