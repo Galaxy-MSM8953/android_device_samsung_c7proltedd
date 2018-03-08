@@ -1,11 +1,5 @@
-# Inherit from vendor
-$(call inherit-product-if-exists, vendor/samsung/c7proltedd/c7proltedd-vendor.mk)
-
 # RIL
 TARGET_HAS_DUALSIMS := true
-
-# Inherit from common
-$(call inherit-product, device/samsung/c7prolte-common/c7prolte.mk)
 
 LOCAL_PATH := device/samsung/c7proltedd
 
@@ -25,3 +19,9 @@ TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
+# Inherit from common
+$(call inherit-product, device/samsung/c7prolte-common/c7prolte.mk)
+
+# Inherit from vendor
+$(call inherit-product-if-exists, vendor/samsung/c7proltedd/c7proltedd-vendor.mk)
